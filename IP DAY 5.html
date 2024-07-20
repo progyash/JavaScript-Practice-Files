@@ -1,0 +1,116 @@
+<!-- <h1 id="demo"></h1>
+<h1 id="demo2"></h1>
+<script>
+    // Syntax
+    // class className{
+    //     constructor(){
+    //         ....
+    //     }
+    // }
+    //Abstraction
+    class Student{
+        constructor(name,age){
+            this.name=name
+            this.age = age
+        }
+    }
+    let s1=new Student("Yash",20)
+    console.log(s1.name)
+    console.log(s1.age)
+    console.log(s1.name,s1.age)
+    document.getElementById('demo').innerHTML=`My name is ${s1.name} I'm ${s1.age} years old`
+    let s2=new Student("Ashish",20)
+    console.log(s2.name)
+    console.log(s2.age)
+    console.log(s2.name,s2.age)
+    document.getElementById('demo2').innerHTML=`My name is ${s2.name} I'm ${s1.age} years old`
+</script> -->
+
+<!-- Encapsulation -->
+ <!-- <script>
+     class Student{
+        constructor(name,age){
+            this._name=name
+            this.age = age
+        }
+        getName(){
+            console.log(this._name)
+        }
+    }
+    class Std{
+        constructor(name){
+            this.name=name
+        }
+    }
+    let s1=new Student("Yash",20)
+    s1.getName()
+    console.log(s1.name)
+    let s2=new Std("2nd Name")
+    console.log(s2.name)
+ </script> -->
+
+ <!-- <script>
+    class Student{
+        constructor(name,age){
+            this._name=name
+            this.age = age
+        }
+    }
+    let s1=new Student("Yash",20)
+    console.log(s1.name)
+    console.log(s1.age)
+ </script> -->
+
+ <!-- Inheritance -->
+  <!-- <script>
+    class H{
+        constructor(){
+            this.name="Yash"
+        }
+    }
+    class J extends H{
+        constructor(lname){
+            super(name)
+            this.lname=lname
+        }
+    }
+    let s1=new J("Chaudhari")
+    console.log(s1.name,s1.lname)
+  </script> -->
+
+  <!-- Poly -->
+  <!-- <script>
+    class Animal{
+        constructor(name){
+            this.name=name
+
+        }
+    makesound(){
+        console.log("Animal Sound")
+     }
+    }
+    class Dog extends Animal{
+        constructor(name){
+            super(name)
+        }
+        makesound(){
+            console.log("Bark")
+        }
+    }
+    class Cat extends Animal{
+        constructor(name){
+            super(name)
+        }
+        makesound(){
+            console.log("Meow")
+        }
+    }
+function makeAnimalSound(animal){
+    animal.makesound()
+}
+let dog=new Dog("BOB")
+let cat=new Cat("TOM")
+makeAnimalSound(dog)
+makeAnimalSound(cat)
+
+</script> -->

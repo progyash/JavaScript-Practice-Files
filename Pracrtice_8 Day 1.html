@@ -1,0 +1,34 @@
+<script>
+    console.log("If student is pass or not")
+    let physics = Number(prompt("Physics Marks : "));
+    let chemistry = Number(prompt("Chemistry Marks : "));
+    let maths = Number(prompt("Maths Marks : "));
+    let biology = Number(prompt("Biology Marks : "));
+    let english = Number(prompt("English Marks : "));
+    Total_Marks=(physics+chemistry+maths+biology+english)
+    Averge=(Total_Marks)/500
+    Percentage=Averge*100
+    console.log("Physics Marks : ",physics)
+    console.log("Chemistry Marks : ",chemistry)
+    console.log("Maths Marks : ",maths)
+    console.log("Biology Marks : ",biology)
+    console.log("English Marks : ",english)
+    console.log("Total Marks : ",Total_Marks)
+    console.log("Average Marks : ",Averge)
+    console.log("Percentage : ",Percentage, "%")
+    if (Percentage < 45){
+        console.log("Student Failed")
+    }
+    else if (Percentage <= 45){
+        console.log("Pass")
+    }
+    else if (Percentage <= 65){
+        console.log("Excellent")
+    }
+    else if (Percentage <= 85){
+        console.log("Outstanding")
+    }
+    else{
+        console.log("Awesome")
+    }
+</script>

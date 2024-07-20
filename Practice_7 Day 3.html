@@ -1,0 +1,19 @@
+<div id="demo" style="height: 200px; width: auto; background-color: blue;">Hello</div>
+<div id="demo2" style="height: 200px; width: auto; background-color: red;">Hello</div>
+<button id="btn">Click</button>
+<script>
+    document.getElementById('btn').addEventListener('click',function(){
+        console.log("Button click")
+    })
+    document.getElementById('demo').addEventListener('mouseover',function(){
+        console.log("Mouse on button")
+    })
+    document.getElementById('demo2').addEventListener('mouseenter',function(){
+        this.style.backgroundColor='orange'
+        this.textContent="Mouse entered"
+    })
+    document.getElementById('demo2').addEventListener('mouseleave',function(){
+        this.style.backgroundColor='red'
+        this.textContent="Mouse leave"
+    })
+</script>

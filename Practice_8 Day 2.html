@@ -1,0 +1,24 @@
+<!-- <script>
+    let n = 5; // You can change this value to calculate the factorial of a different number
+let result = 1;
+
+if (n < 0) {
+    console.log("Factorial is not defined for negative numbers");
+} 
+else {
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    console.log(`Factorial of ${n} is: ${result}`);
+}
+
+</script> -->
+
+<script>
+    function fact(n){
+        if (n===0)
+        return 1
+    return n*fact(n-1);
+    }
+    console.log(fact(5))
+</script>

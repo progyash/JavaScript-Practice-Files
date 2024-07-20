@@ -1,0 +1,124 @@
+<!-- Submit or Reset -->
+<!-- <form id="Kuchbhi">
+    <label for="">Username : </label>
+    <input type="text" id="name">
+    <br><label for="">Password : </label>
+    <input type="password" id="pass">
+    <br><button type="submit">Submit</button>
+    <br><button type="reset">Reset</button>
+</form>
+<script>
+    document.getElementById('Kuchbhi').addEventListener('submit',function(event){
+        event.preventDefault()
+        console.log('Form Submitted')
+    })
+    document.getElementById('Kuchbhi').addEventListener('reset',function(event){
+        console.log('Form Reset')
+    })
+</script> -->
+
+<!-- Focus or Blur -->
+<!-- <input type="text" id="Kuchbhi">
+<script>
+    document.getElementById('Kuchbhi').addEventListener('focus',function(event){
+        console.log("Focus on Input")
+    })
+    document.getElementById('Kuchbhi').addEventListener('blur',function(event){
+        console.log("Focus Blur")
+    })
+</script> -->
+
+<!-- Media -->
+ <!-- <video controls src="Green Leaf Gardens - Google Chrome 2024-03-31 13-06-42.mp4" id="vdo"></video>
+ <script>
+    document.getElementById('vdo').addEventListener('play',function(){
+        console.log('Media Play')
+    })
+    document.getElementById('vdo').addEventListener('pause',function(){
+        console.log('Media Pause')
+    })
+    </script> -->
+
+<!-- Window -->
+<!-- <script>
+    window.addEventListener('load',function(){
+        console.log("Window Loaded")
+    })
+    window.addEventListener('resize',function(){
+        console.log("Window Resized")
+    })
+    window.addEventListener('scroll',function(){
+        console.log("Window Scroll")
+    })
+</script> -->
+
+<!-- TouchEvent -->
+ <!-- <div id="demo" style="height: 300px; width: auto; background-color: blue;"></div>
+ <script>
+    document.getElementById('demo').addEventListener('touchstart',function(event){
+        console.log("Touch Started")
+    })
+    document.getElementById('demo').addEventListener('touchmove',function(event){
+        console.log("Touch Moved")
+    })
+    document.getElementById('demo').addEventListener('touchend',function(event){
+        console.log("Touch Ended")
+    })
+ </script> -->
+
+ <!-- Asynchronus -->
+  <!-- <h1 id="abc"></h1>
+  <script>
+    function display(kuchbhi){
+        console.log("1st numder")
+        document.getElementById('abc').innerHTML=kuchbhi
+    }
+    function add(n1,n2,callback){
+        let sum=n1+n2
+        console.log("2nd numder")
+        //callback(sum)
+        display(sum)
+    }
+    add(5,1,display)
+    // display(4)
+  </script> -->
+
+  <!-- Async -->
+   <!-- <script>
+    async function fetchData(){
+        try{
+            let chocolatekardunga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("yeh lo chocolate")
+                },5000)
+            })
+            let ghumanelekarjanuga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    reject("chalo gar chalte hai")
+                },7000)
+            })
+            let data1= await chocolatekardunga;
+            console.log(data1)
+            let data2= await ghumanelekarjanuga;
+            console.log(data2)
+        }
+        catch(error){
+            console.error("Error",error)
+        }
+    }
+    fetchData()
+   </script> -->
+
+   <script>
+    async function fetchData(){
+        try{
+            let res=await fetch('https://reqres.in/api/users?page=2')
+            let data=await res.json()
+            console.table(data['data'])
+        }
+        catch{
+            console.log("error")
+        }
+    }
+    fetchData()
+   </script>

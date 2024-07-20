@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <label for="num1">Enter Number : </label>
+        <input type="number" id="num1">
+        <button onclick="inputValue1()">Show on console</button>
+        <label for="num2">Enter Number : </label>
+        <input type="number" id="num2">
+        <button onclick="inputValue2()">Show on console</button>
+        <button onclick="add()">Add</button>
+    </body>
+    <script>
+        function inputValue1(){
+            let num1 = document.getElementById('num1').value;
+            console.log(num1);
+        }
+
+        function inputValue2(){
+            let num2 = document.getElementById('num2').value;
+            console.log(num2);
+        }
+
+        function add(){
+            let num1 = Number(document.getElementById('num1').value);
+            let num2 = Number(document.getElementById('num2').value);
+            let sum = num1 + num2;
+            console.log(sum);
+        }
+    </script>
+</html>

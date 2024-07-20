@@ -1,0 +1,16 @@
+<script>
+    function findIndexUsingLoop(arr, element) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === element) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+const array = [10, 20, 30, 40, 30, 50];
+const elementToFind = 30;
+const index = findIndexUsingLoop(array, elementToFind);
+console.log(`Index of ${elementToFind} is:`, index); // Output: Index of 30 is: 2
+
+</script>

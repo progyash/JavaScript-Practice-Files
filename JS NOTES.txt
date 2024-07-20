@@ -1,0 +1,10 @@
+//--// -> Single Comment
+/*--*/ -> Multiple Comment
+var -> var is the keyword that tells JavaScript you're declaring a variable
+    -> No space while declaring string
+    -> Case sensitive (whilw declaring stringwe can't write Captail and small letter at same time)
+``  -> Backtick can be used for putting dynamic values    
+
+
+
+15 % 5 == 0

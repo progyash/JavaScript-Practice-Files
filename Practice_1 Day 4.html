@@ -1,0 +1,77 @@
+<!-- <script>
+    async function fetchData(){
+        try{
+            let chocolatekardunga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("yeh lo chocolate")
+                },5000)
+            })
+            let ghumanelekarjanuga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    reject("chalo gar chalte hai")
+                },7000)
+            })
+            let kalnahiatahai=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("kal nahi ata hai")
+                },8000)
+            })
+            let data1= await chocolatekardunga;
+            console.log(data1)
+            let data2= await ghumanelekarjanuga;
+            console.log(data2)
+            let data3= await kalnahiatahai;
+            console.log(data3)
+        }
+        catch(error){
+            console.error("Error : ",error)
+        }
+    }
+    fetchData()
+   </script> -->
+
+   <script>
+    async function fetchData(){
+        try{
+            let chocolatekardunga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    console.log("Promise 1 Resolve")
+                    resolve("yeh lo chocolate")
+                },5000)
+            })
+            let ghumanelekarjanuga=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    console.log("Promise 2 Reject")
+                    reject("chalo gar chalte hai")
+                },7000)
+            })
+            let kalnahiatahai=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    console.log("Promise 3 Resolve")
+                    resolve("kal nahi ata hai")
+                },8000)
+            })
+            chocolatekardunga
+            .then((res1)=>{
+                console.log(res1)
+                return ghumanelekarjanuga;
+            })
+            .then((res2)=>{
+                console.log(res2)
+                return kalnahiatahai;
+            })
+            .then((res3)=>{
+                console.log(res3)
+            })
+            .catch((error))
+        }
+            catch (error){
+                console.log("Error : ", error);
+            }
+
+
+
+    }
+
+    fetchData()
+   </script>
